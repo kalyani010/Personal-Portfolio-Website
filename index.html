@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalyani's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Kalyani</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="darkModeToggle" title="Toggle dark mode">🌙</button>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>
+                Hello, I'm <span>Kalyani</span>
+            </h1>
+            <p>
+                <span id="animatedText"></span>
+            </p>
+            <a href="#contact" class="btn">Get in Touch</a>
+            <a href="resume.pdf" class="btn download-btn" download>Download Resume</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+                I'm Kalyani, a passionate web developer who loves creating beautiful and user-friendly websites. My expertise includes HTML, CSS, and JavaScript. I enjoy learning new technologies and bringing ideas to life on the web.
+            </p>
+            <a href="resume.pdf" class="btn download-btn" download>Download Resume</a>
+        </section>
+        
+        <section id="skills" class="card">
+            <h2>My Skills</h2>
+            <div class="skills-bar">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="bar">
+                        <div class="progress" data-value="95"></div>
+                    </div>
+                </div>    
+                <div class="skill">
+                    <span>Python</span>
+                    <div class="bar">
+                        <div class="progress" data-value="75"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="bar">
+                        <div class="progress" data-value="90"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="bar">
+                        <div class="progress" data-value="80"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Design</span>
+                    <div class="bar">
+                        <div class="progress" data-value="85"></div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project" data-title="Portfolio Website" data-desc="Hi, I’m Kalyani! I’m a web developer who loves creating easy-to-use and responsive websites. I work with HTML, CSS, JavaScript, and Python to build clean and efficient designs that look great on any device. Some of my projects include my own portfolio site, Try-Fly — a platform for renting dresses online, and Gav-Cab — a car booking app like Ola. I enjoy working with real-time features, secure payments, and making sure everything runs smoothly on mobile. I’m always learning new things and passionate about making digital experiences simple and enjoyable.">
+                    <h3>Portfolio Website</h3>
+                    <p>I’m Kalyani, a web developer skilled in HTML, CSS, JavaScript, and Python, passionate about creating responsive, user-friendly websites and apps like Try-Fly and Gav-Cab.</p>
+                </div>
+                <div class="project" data-title="Try-Fly " data-desc="Try-Fly is an online dress rental platform for booking designer outfits for weddings, parties, and events.
+                                                                    I worked on the UI/UX design and developed responsive pages using React and Tailwind CSS.
+                                                                    The site features dress filters, real-time availability, user accounts, and secure payments.
+                                                                    I also implemented the booking system and optimized performance and SEO.
+                                                                    This project combines fashion, tech, and sustainability in one seamless rental experience.">
+                    <h3>Try-Fly</h3>
+                    <p>Try-Fly is a responsive online dress rental platform I designed and developed using React and Tailwind CSS, featuring real-time bookings, secure payments, and user-friendly filters.</p>
+                </div>
+                <div class="project" data-title="Gav-Cab" data-desc="Gav-Cab is an online car booking platform that allows users to book rides in real-time, similar to Ola and Uber.
+                                                                    I worked on building the frontend and backend, ensuring a smooth and responsive user experience.
+                                                                    Key features include live ride tracking, fare calculation, driver matching, and secure payments.
+                                                                    User and driver accounts are supported with real-time ride status updates and notifications.
+                                                                    This project helped me strengthen my skills in real-time data handling, mapping APIs, and mobile-first design.">
+                    <h3>Gav-Cab</h3>
+                    <p>Gav-Cab is a real-time car booking platform like Ola/Uber, where I developed both frontend and backend with features like live tracking, fare calculation, and secure payments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="card">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="C:\Users\IMRD\Desktop\kalyanisur\E-commears\Personal Portfolio Website\1.jpg" alt="1">
+                <img src="C:\Users\IMRD\Desktop\kalyanisur\E-commears\Personal Portfolio Website\2.jpg" alt="2">
+                <img src="C:\Users\IMRD\Desktop\kalyanisur\E-commears\Personal Portfolio Website\3.jpg" alt="3">
+                <img src="C:\Users\IMRD\Desktop\kalyanisur\E-commears\Personal Portfolio Website\4.png" alt="4">
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="formMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kalyani. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
